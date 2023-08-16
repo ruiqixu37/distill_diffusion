@@ -1,5 +1,5 @@
 # distill_diffusion
-Personal pytorch implementation of the 2023 CVPR Award Candidate: *On Distillation of Guided Diffusion Models*[paper link](https://arxiv.org/abs/2210.03142).
+Personal pytorch implementation of the 2023 CVPR Award Candidate: *On Distillation of Guided Diffusion Models*. [[link]](https://arxiv.org/abs/2210.03142)
 
 ## Dependencies
 To install the required libraries, run:
