@@ -1,0 +1,34 @@
+model_params:
+  stage: 1
+  teacher_model_id: "runwayml/stable-diffusion-v1-5"
+  num_inference_step: 50
+  name: "StageOneDistillation"
+  min_guidance: 2
+  max_guidance: 14
+
+data_params:
+  input_dataset_folder: "dataset/laion400m-data/"
+  batch_size: 64
+  num_prepro_workers: 0
+  enable_text: True
+  enable_image: True
+  enable_metadata: True
+  preprocess: 'RN50'
+
+
+exp_params:
+  LR: 0.005
+  batch_size: 64
+  weight_decay: 0.0
+  scheduler_gamma: 0.95
+  manual_seed: 1265
+
+trainer_params:
+  devices: 1
+  accelerator: 'gpu'
+  max_epochs: 100
+  strategy: 'ddp'
+
+logging_params:
+  save_dir: "stage_one_logs/"
+  name: "distilled_stage_one"

@@ -1,0 +1,22 @@
+# .DS_Store
+.DS_Store
+
+# pytest files
+.pytest_cache/
+pytest.ini
+tests/
+
+# dataset
+dataset/laion400*
+
+# python cache
+__pycache__/
+
+# VScode settings
+.vscode/
+
+# egg-info
+*.egg-info/
+
+# logs
+stage_one_logs/
